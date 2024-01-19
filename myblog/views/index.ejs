@@ -1,0 +1,40 @@
+<!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modern Blog</title>
+    <link rel="stylesheet" href="/post-style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Random blog post from Zach</h1>
+        <nav>
+            <a href="/blogs/new">Create New Post</a>
+        </nav>
+    </header>
+
+    <section class="blog-posts">
+        <% posts.forEach(post=> { %>
+            <article>
+                <h2>
+                    <%= post.title %>
+                </h2>
+                <p>
+                    <%= post.content %>
+                </p>
+                <p>Posted on: <%= post.created_at %>
+                </p>
+            </article>
+            <% }) %>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Zacharia Blog</p>
+    </footer>
+</body>
+
+</html>

@@ -1,0 +1,33 @@
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Create New Post</title>
+    <link rel="stylesheet" href="/new-post-style.css">
+</head>
+
+<body>
+    <header>
+        <h1>Create random blog post by Zach</h1>
+        <nav>
+            <a href="/blogs">Cancel</a>
+        </nav>
+    </header>
+
+    <section class="new-post-form">
+        <form action="/blogs" method="POST">
+            <label for="title">Title:</label><br>
+            <input type="text" id="title" name="title" required><br>
+            <label for="content">Content:</label><br>
+            <textarea id="content" name="content" required></textarea><br>
+            <button type="submit">Submit</button>
+        </form>
+    </section>
+
+    <footer>
+        <p>&copy; 2023 Zacharia Blog </p>
+    </footer>
+</body>
+
+</html>
